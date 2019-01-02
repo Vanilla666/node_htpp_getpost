@@ -1,7 +1,7 @@
 var http = require('http'); //基本http伺服器
 var url = require('url'); //手動解析url
 var util = require('util');//轉換字串用
-var querystring = require('querystring'); //
+var querystring = require('querystring'); //用來解析查詢字串
  
 var postHTML = 
   '<html><head><meta charset="utf-8"><title>菜鸟教程 Node.js 实例</title></head>' +
