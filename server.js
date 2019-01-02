@@ -40,7 +40,7 @@ http.createServer(function (req, res) {
 
 http.createServer(function(req, res){
     res.writeHead(200, {'Content-Type': 'text/plain; charset=utf-8'}); //請求發送回應標頭
-    const text = url.parse(req.url, true);
+    const text = url.parse(req.url, true); //URL的解析
     console.log(text);//獲得URL全部資訊
     console.log(text.query);//獲得get的輸入參數
     res.end(util.inspect(url.parse(req.url, true)));//res.end()結束回應 util.inspect()轉換成字串 url.parse()手動解析url  req.url請求的URL
